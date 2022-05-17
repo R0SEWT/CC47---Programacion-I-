@@ -24,7 +24,7 @@ double Convertir_divisa(bool modo,float cambio, double monto) {
 	return monto / cambio; //Dolares a soles
 }
 
-void Mostrar_divisa(bool modo, float resultado) {
+void Mostrar_divisa(bool modo, double resultado) {
 	if (!modo) {//a dolar
 		cout << "Su equivalente al cambio de hoy es de " << resultado<<" dolares americanos" << endl;
 	}
