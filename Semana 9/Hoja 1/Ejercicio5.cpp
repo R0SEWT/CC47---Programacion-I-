@@ -31,9 +31,7 @@ void Mostrar_divisa(bool modo, float resultado) {
 	else{
 		cout << "Su equivalente al cambio de hoy es de " << resultado<<" Nuevos Soles" << endl;
 	}
-
 }
-
 
 int main() {
 	bool modo;
@@ -48,3 +46,4 @@ int main() {
 	Mostrar_divisa(modo,divisa_resultante);
 	return 0;
 }
+
