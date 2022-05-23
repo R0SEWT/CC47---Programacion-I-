@@ -3,6 +3,9 @@
 using namespace std;
 
 bool EsBiciesto(int anio) { //año 0 es biciesto
+	if(anio<0){
+		anio *= -1;
+	}
 	if (anio % 400 == 0) {
 		return true;
 	}
