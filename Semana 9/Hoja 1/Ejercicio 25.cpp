@@ -24,15 +24,30 @@ int sumaDivisores(int n) { //de ingresar 0 devolverá un valor erroneo
 
 
 bool esPerfecto(int n) {
-
-	int suma_divisores_propios = sumaDivisores(n) - (n + 1); //Suma de divisores (-) excluyendo "n" y 1
-
+	int suma_divisores_propios = sumaDivisores(n) - n; //Suma de divisores (-) excluyendo "n"
 	if (n == suma_divisores_propios) {			
 		return true;					
 	}
 
 	return false;
 }
+
+
+int main() {
+	int n;
+
+	n = ingresarN();
+
+	if (esPerfecto(n)) {
+		cout << "El numero " << n << " es un numero perfecto";
+	}
+	else {
+		cout << "El numero " << n << " no es un numero perfecto";
+	}
+
+	return 0;
+}
+
 
 
 int main() {
