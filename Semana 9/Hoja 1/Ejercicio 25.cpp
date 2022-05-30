@@ -17,7 +17,6 @@ int sumaDivisores(int n) { //de ingresar 0 devolverá un valor erroneo
 	for (int i = 1; i <= n; i++) {
 		if (n % i == 0) {
 			suma += i;
-			cout << i << " + ";
 		}
 	}
 	return suma;
